@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | AI Study Buddy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashboard-body">
+
+    <header class="dashboard-header">
+        <div>
+            <h1>AI Study Buddy</h1>
+            <p id="welcome-message">Loading your account...</p>
+        </div>
+
+        <button id="logout-button" class="logout-button">
+            Log Out
+        </button>
+    </header>
+
+    <main class="dashboard-layout">
+
+        <aside class="history-panel">
+            <h2>Study History</h2>
+
+            <button class="new-chat-button">
+                + New Chat
+            </button>
+
+            <div id="chat-history">
+                <p class="empty-history">
+                    Your saved conversations will appear here.
+                </p>
+            </div>
+        </aside>
+
+        <section class="chat-panel">
+
+            <div class="chat-heading">
+                <p class="tagline">AI learning assistant</p>
+                <h2>What would you like help studying?</h2>
+
+                <p>
+                    Ask a question and receive a clear explanation.
+                </p>
+            </div>
+
+            <div id="chat-messages" class="chat-messages">
+
+                <div class="ai-message">
+                    <strong>AI Study Buddy</strong>
+
+                    <p>
+                        Hi! Ask me a question about any topic you are studying.
+                    </p>
+                </div>
+
+            </div>
+
+            <form id="chat-form" class="chat-form">
+
+                <textarea
+                    id="chat-input"
+                    placeholder="Type your study question here..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Ask AI
+                </button>
+
+            </form>
+
+            <p id="chat-status" class="form-message"></p>
+
+        </section>
+
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
